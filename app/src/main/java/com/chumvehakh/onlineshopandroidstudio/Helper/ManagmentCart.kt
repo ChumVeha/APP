@@ -23,7 +23,7 @@ class ManagmentCart(val context: Context) {
         Toast.makeText(context, "Added to your Cart", Toast.LENGTH_SHORT).show()
     }
 
-    private fun getListCart(): ArrayList<ItemsModel> {
+    fun getListCart(): ArrayList<ItemsModel> {
         return tinyDB.getListObject("CartList") ?: arrayListOf()
     }
 
